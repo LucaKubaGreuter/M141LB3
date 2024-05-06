@@ -1,4 +1,4 @@
-mysqldump --defaults-file="C:\Users\lucag\Github\M141LB3\my.conf" --routines --triggers --single-transaction backpacker_lb3 > backpacker_lb3_dump.sql
+mysqldump --defaults-file="C:\Users\lucag\Github\M141LB3\my.conf" --all-databases > backpacker_lb3_dump.sql
 
 scp -i "C:\Users\lucag\M141LB3.pem" C:\xampp\mysql\bin\backpacker_lb3_dump.sql ubuntu@44.195.118.226:/home/ubuntu
 
