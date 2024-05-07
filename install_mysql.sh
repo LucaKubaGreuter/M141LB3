@@ -2,12 +2,8 @@
 
 sudo apt update
 
-sudo apt install mysql-server -y
+sudo apt install mariadb-server
 
 sudo mysql_secure_installation
 
-sudo systemctl start mysql.service
-
-sudo systemctl enable mysql.service
-
-echo "MySQL wurde erfolgreich installiert und gestartet!"
+echo "mariadb wurde erfolgreich installiert und gestartet!"
